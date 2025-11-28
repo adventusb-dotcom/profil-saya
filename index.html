@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adventus Boy - Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">Adventus Boy</a>
+
+      <button id="hamburger" class="hamburger">☰</button>
+
+      <ul id="nav-links" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#education">Pendidikan</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle"></button>
+        <a class="btn-primary desktop-only cv-btn" href="CV Adventus Boy.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="container hero-inner">
+      <img src="saya.jpg" alt="Foto Adventus Boy" class="profile-img neon-profile">
+
+      <div class="hero-right">
+        <h1>Adventus Boy</h1>
+        <h2>Programmer pemula yang suka membuat sesuatu yang bermanfaat dan terus belajar teknologi baru.</h2>
+      </div>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="container">
+      <h3>Tentang Saya</h3>
+      <p>
+        Saya Adventus Boy, biasa dipanggil Boy. Saya berfokus pada pengembangan web dengan PHP, HTML, CSS, JavaScript, SQL, dan Firebase Realtime.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <h3>Program yang dikuasai</h3>
+      <div class="skills-grid">
+        <button class="skill-card neon-skill" onclick="window.location.href='https://www.php.net/'">PHP</button>
+        <button class="skill-card neon-skill" onclick="window.location.href='https://web.dev/html?hl=id'">HTML</button>
+        <button class="skill-card neon-skill" onclick="window.location.href='https://web.dev/css?hl=id'">CSS</button>
+        <button class="skill-card neon-skill" onclick="window.location.href='https://web.dev/javascript?hl=id'">JavaScript</button>
+        <button class="skill-card neon-skill" onclick="window.location.href='https://www.mysql.com/'">SQL</button>
+        <button class="skill-card neon-skill" onclick="window.location.href='https://firebase.google.com/docs/database?hl=id'">FireBase RealTime</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="section portfolio">
+    <div class="container">
+      <h3>Project yang sudah Dikerjakan</h3>
+
+      <div class="card-grid">
+
+        <article class="project-card neon-card">
+          <div class="card-body">
+            <h4>Website Sebangkang</h4>
+            <p>Fullstack dengan HTML + CSS + JavaScript + Firebase.</p>
+            <a class="link" href="https://adventusb-dotcom.github.io/Dusun-Sebangkang/">Visit</a>
+          </div>
+        </article>
+
+        <article class="project-card neon-card">
+          <div class="card-body">
+            <h4>Soon</h4>
+            <p>Empty caption</p>
+          </div>
+        </article>
+
+        <article class="project-card neon-card">
+          <div class="card-body">
+            <h4>Soon</h4>
+            <p>Empty caption</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section education">
+    <div class="container">
+      <h3>Pendidikan Terakhir</h3>
+
+      <div class="edu-item">
+        <h4>SD Negeri 08 Sebangkang</h4><p>Lulus</p>
+      </div>
+
+      <div class="edu-item">
+        <h4>SMP Negeri 01 Empanang</h4><p>Lulus</p>
+      </div>
+
+      <div class="edu-item">
+        <h4>SMA Negeri 01 Semitau</h4><p>Lulus — Jurusan IPS</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="container contact-grid">
+
+      <div class="contact-card">
+        <h3>Kontak</h3>
+        <p>Email: <a href="mailto:Adventusb@gmail.com">📩</a></p>
+        <p>WhatsApp: <a href="https://wa.me/6285849602534">📞</a></p>
+        <p>Linktree: <a href="https://linktr.ee/Boybluesky">Klik here</a></p>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/xkglkkra" method="POST">
+        <h3>Kirim Pesan</h3>
+        <input type="text" name="nama" autocomplete="name" placeholder="Nama Anda" required>
+        <ul></ul>
+        <input type="email" name="email" autocomplete="email" placeholder="Email Anda" required>
+        <label>
+          Pesan
+        </label><textarea name="message"></textarea>
+        <button class="btn-primary">Kirim</button>
+      </form>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Adventus Boy</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
